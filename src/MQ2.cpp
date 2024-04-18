@@ -3,7 +3,7 @@
 
 MQ2::MQ2(int pin) {
 	_pin = pin;
-	Ro = -1.0;
+	Ro = 0.45;
 }
 
 void MQ2::begin(){
@@ -14,7 +14,7 @@ void MQ2::begin(){
 }
 
 void MQ2::close(){
-	Ro = -1.0;
+	Ro = 0.45;
 	values[0] = 0.0;
 	values[1] = 0.0;
 	values[2] = 0.0;
